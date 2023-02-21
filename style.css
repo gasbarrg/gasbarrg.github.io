@@ -10,4 +10,5 @@ body {
 .center {
   text-align: center;
   color: white; 
+  transform: translate(-50%, -50%);
 }
