@@ -1,3 +1,10 @@
+body { 
+  background: #5491FF;
+  background: -webkit-linear-gradient(top left, #5491FF, #FFFFFF);
+  background: -moz-linear-gradient(top left, #5491FF, #FFFFFF);
+  background: linear-gradient(to bottom right, #5491FF, #FFFFFF);
+}
+
 .center {
   border: 5px solid;
   text-align: center;
