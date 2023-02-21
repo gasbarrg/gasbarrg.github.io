@@ -1,6 +1,6 @@
 body { 
   margin: 0;
-  height: 100%;
+  min-height: 100vh;
   background: #5491FF;
   background: -webkit-linear-gradient(top left, #5491FF, #FFFFFF);
   background: -moz-linear-gradient(top left, #5491FF, #FFFFFF);
