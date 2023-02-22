@@ -16,3 +16,11 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.header-center {
+  height: 1px;
+  background: #dddddd;
+  border-bottom: #ffffff solid 1px;
+  margin-bottom: 3.2rem;
+  position: relative;
+}
