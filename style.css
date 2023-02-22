@@ -55,16 +55,16 @@ margin-bottom: 40px;
 }
 
 #project_box {
-  padding: 1.6rem;
-  height: 20rem
+  padding: 2%;
 }
 
 .img_wrap {
 position: relative;
-width: 90%;
-height: 80%;
+width: 80%;
+max-width: 380px;
+height: auto;
 background-repeat: no-repeat;
-background-size: cover;
+background-size: contain;
 overflow: hidden;
 right: -5%;
 box-shadow: rgb(0 0 0 / 22%) 0px 8px 20px 0px;
@@ -79,10 +79,11 @@ color: rgb(66, 66, 66);
 position: relative;
 top: -80px;
 right: 0px;
-width: 380px;
+width: 90%;
+padding: 10px;
 background: rgba(255, 255, 255, 0.9);
 box-shadow: rgb(34 34 34 / 18%) -4px 8px 20px 0px;
-padding: 20px;
+
 }
 
 #project_box:hover .img_wrap{
@@ -151,7 +152,7 @@ padding: 5%;
 position: center;
 z-index: 2;
 top: 0px;
-width: 95%;
+width: 100%;
 padding-top: 3rem;
 opacity: 1;
 transition: opacity 2s ease 0s;
