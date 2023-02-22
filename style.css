@@ -147,12 +147,11 @@ padding: 0px 0px;
 
 .app_core {
 box-sizing: border-box;
-padding: 0% 5%;
-position: relative;
+padding: 5%;
+position: center;
 z-index: 2;
 top: 0px;
-width: 98%;
-margin: 0px auto;
+width: 95%;
 padding-top: 3rem;
 opacity: 1;
 transition: opacity 2s ease 0s;
