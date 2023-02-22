@@ -4,8 +4,12 @@
 **/
 .section-header {
   position: relative;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  width: 100%;
+  min-width: 75%;
   border-bottom:  rgb(66, 66, 66) solid 1px;
  }
 
@@ -41,7 +45,7 @@ margin: 0; }
 display: flex;
 flex-wrap: wrap;
 -webkit-box-pack: justify;
-justify-content: space-between;
+justify-content: center;
 }
 
 .container {
@@ -52,17 +56,18 @@ margin-bottom: 40px;
 }
 
 #project_box {
-
+  padding: 1.6rem;
+  height: 20rem
 }
 
 .img_wrap {
 position: relative;
-width: 380px;
-height: 244px;
+width: 90%;
+height: 80%;
 background-repeat: no-repeat;
 background-size: cover;
 overflow: hidden;
-right: -20px;
+right: -5%;
 box-shadow: rgb(0 0 0 / 22%) 0px 8px 20px 0px;
 transform: translateY(20px);
 transition: opacity 0.2s linear 0s, transform 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
@@ -138,17 +143,16 @@ display: block;
 .app_outer{
 width: 100%;
 box-sizing: border-box;
-padding: 0px 40px;
+padding: 0px 0px;
 }
 
 .app_core {
 box-sizing: border-box;
-padding: 0px 40px;
+padding: 0% 5%;
 position: relative;
 z-index: 2;
 top: 0px;
-width: 75%;
-min-width: 50%;
+width: 98%;
 margin: 0px auto;
 padding-top: 3rem;
 opacity: 1;
@@ -232,16 +236,10 @@ width: 100%;
 --bs-gutter-y: 0;
 display: flex;
 flex-wrap: wrap;
+-webkit-box-pack: justify;
 margin-top: calc(var(--bs-gutter-y) * -1);
 margin-right: calc(var(--bs-gutter-x) / -2);
 margin-left: calc(var(--bs-gutter-x) / -2); }
-.row > * {
-  flex-shrink: 0;
-  width: 100%;
-  max-width: 100%;
-  padding-right: calc(var(--bs-gutter-x) / 2);
-  padding-left: calc(var(--bs-gutter-x) / 2);
-  margin-top: var(--bs-gutter-y); }
 
 .text-center {
 text-align: center !important; }
