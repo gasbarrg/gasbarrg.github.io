@@ -4,12 +4,10 @@
 **/
 .section-header {
   position: relative;
-  margin-right: auto;
-  margin-left: auto;
   padding-top: 3rem;
   padding-bottom: 3rem;
   width: 100%;
-  min-width: 75%;
+
   border-bottom:  rgb(66, 66, 66) solid 1px;
  }
 
@@ -22,6 +20,7 @@ position: relative;
 padding-top: 3rem;
 padding-bottom: 3rem;
 }  
+
 .bg-primary {
   background-color: #6fa5c5 !important; 
   }
