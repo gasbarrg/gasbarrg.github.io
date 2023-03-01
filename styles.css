@@ -367,7 +367,7 @@ header {
     /* Add the slide-up animation to each section */
 section {
     animation-name: slideUp;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
     animation-fill-mode: both; /* keeps the final state of the animation after it ends */
   }
 
