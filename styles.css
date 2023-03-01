@@ -399,6 +399,13 @@
     animation-fill-mode: both; /* keeps the final state of the animation after it ends */
   }
 
+  section {
+    max-width: 1000px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+  }
+
 /* Define the slide-up animation */
 @keyframes slideUp {
     0% {
