@@ -14,25 +14,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GG Engineering</title>
     <link rel="stylesheet" href="styles.css">
-
-    <script>
-      window.addEventListener("scroll", function() {
-        var sections = document.querySelectorAll("section");
-        for (var i = 0; i < sections.length; i++) {
-          var section = sections[i];
-          var sectionTop = section.offsetTop;
-          var sectionBottom = sectionTop + section.offsetHeight;
-          var scrollTop = window.pageYOffset;
-          var viewportHeight = window.innerHeight;
-          if (sectionTop < scrollTop + viewportHeight && sectionBottom > scrollTop) {
-            section.classList.add("visible");
-          } else {
-            section.classList.remove("visible");
-          }
-        }
-      });
-    </script>
-
   </head>
   <body>
     <header>
@@ -99,7 +80,7 @@
 
       <section>
         <div class = "link-container">
-            <p>Github:</p><a href="mailto:gasbarregabe@gmail.com">@gasbarrg</a>
+            <p>Github:</p><a href="https://github.com/gasbarrg/">@gasbarrg</a>
         </div>
       </section>
 
@@ -107,7 +88,7 @@
 
     <div orientation = "right" class="side-style">
         <div class = "email-side-style">
-            <a href="https://github.com/gasbarrg/">gasbarregabe@gmail.com</a>
+            <a href="mailto:gasbarregabe@gmail.com">gasbarregabe@gmail.com</a>
         </div>
     </div>
 
