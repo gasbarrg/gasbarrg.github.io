@@ -2,7 +2,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
   }
   
   body {
@@ -155,9 +154,9 @@
 /* About Styling */
 .about-container {
     background-color: rgba(255, 255, 255, 0.2);
-    margin: 80px 100px;
-    margin-top: 100px;
-    padding: 50px;
+    margin: 0px 100px;
+    padding: 100px;
+    padding-top: 200px;
     border-radius: 5px;
     min-height: 100vh;
     height: 100vh;
@@ -394,7 +393,7 @@
   }
 
     /* Add the slide-up animation to each section */
-section {
+ .fade-up {
     animation-name: slideUp;
     animation-duration: 2s;
     animation-fill-mode: both; /* keeps the final state of the animation after it ends */
