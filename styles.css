@@ -290,6 +290,7 @@
     background-color: #d63434;
     }
 
+
     /* Project Container Wrapper Styles */
 .project-container-wrapper {
     display: flex;
@@ -314,12 +315,25 @@
     height: 400px;
     width: 300px;
   }
+
+  .project-container h3 {
+    padding: 10px;
+  }
   
   .project-container:hover {
     background-color: rgba(0, 0, 0, 0.8);
     color: red;
     transform: translateY(-10px);
     cursor: pointer;
+  }
+
+  .project-container img { 
+    max-width: 100%;
+  }
+
+  .project-container img:hover {
+    transform: scale(1.1);
+    transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
   }
     
     /* Footer Styles */
