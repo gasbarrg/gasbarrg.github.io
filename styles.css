@@ -348,16 +348,17 @@
     }
   
 
+    @media only screen and (min-width: 768px){
     .side-style{
     width: 30px;
     position: fixed;
     bottom: 0px;
     left: auto;
-    right: 10px;
+    right: 40px;
     z-index: 10;
     color: var(--white);
     }
-
+  }
     .email-side-style{
       margin: 10px auto;
       padding: 10px;
