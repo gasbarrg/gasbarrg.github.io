@@ -13,6 +13,9 @@
     color: #fff;
     --green: #64ffda;
     --red:  #ff3b3b;
+    --light-slate: #a8b2d1;
+    --white: #ffffff; 
+    --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
   }
   
 
@@ -156,7 +159,8 @@
     margin-top: 100px;
     padding: 50px;
     border-radius: 5px;
-
+    min-height: 100vh;
+    height: 100vh;
   }
   
   @media only screen and (max-width: 768px){
@@ -344,6 +348,50 @@
     color: #ff3b3b;
     }
   
+
+    .side-style{
+    width: 30px;
+    position: fixed;
+    bottom: 0px;
+    left: auto;
+    right: 10px;
+    z-index: 10;
+    color: var(--white);
+    }
+
+    .email-side-style{
+      margin: 10px auto;
+      padding: 10px;
+      font-family: var(--font-mono);
+      font-size: var(--fz-xxs);
+      line-height: var(--fz-lg);
+      letter-spacing: 0.1em;
+      -webkit-writing-mode: vertical-rl;
+      writing-mode: vertical-rl;
+    }
+
+    .email-side-style a {
+      display: inline-block;
+      text-decoration: none;
+      text-decoration-skip-ink: auto;
+      color: inherit;
+      position: relative;
+      transition: var(--transition);
+    }
+
+    .email-side-style a:hover{
+      transform: translateY(-6px);
+      color: var(--red); 
+    }
+
+    .side-style::after {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 90px;
+      margin: 10px auto;
+      background-color: var(--light-slate);
+  }
 
     /* Add the slide-up animation to each section */
 section {
