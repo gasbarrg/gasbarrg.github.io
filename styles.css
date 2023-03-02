@@ -526,14 +526,21 @@
     }
   }
   
+  .stats-container{
+    padding-top: 100px;
+    padding: 10px;
+    display:flex;
+    justify-content: center;
+  }
   
   .grid-container {
-    display: inline-grid;
+    display: grid;
     grid-template-columns: 200px 200px;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-    place-items: center;
-    
+    justify-content: center;
+    justify-items: center;
+    padding-bottom: 200px;
   }
   
   .grid-container p{
