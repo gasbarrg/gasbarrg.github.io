@@ -30,6 +30,15 @@
     z-index: 999;
   }
 
+  h1  {
+    margin: 0px;
+    font-size: clamp(40px, 8vw, 70px);
+    color: var(--red);
+    margin-bottom: 20px;
+    align-content: center;
+    width: 100%;
+  }
+
   header .container {
     justify-content: space-between;
     height: 20px;
@@ -160,7 +169,21 @@
     border-radius: 5px;
     min-height: 100vh;
     height: 100vh;
+    opacity: 0;
+    animation-name: fadein;
+    animation-duration: 2s;
+    animation-fill-mode: both;
   }
+
+  /* Define the slide-up animation */
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
   
   @media only screen and (max-width: 768px){
   .about-container {
@@ -181,11 +204,10 @@
   }
   
   .about-container p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
     opacity: 0.8;
-    color: #fff;
-    text-align: center;
+    text-align: left;
   }
   
   .about-container a {
@@ -374,6 +396,18 @@
     }
   }
 
+  .code{
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    color: red;
+    font-weight: bold;
+  }
+
+  .code-text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    font-weight: 400;
+  }
+  
   @media only screen and (max-width: 1080px){
     .side-style{
       display: none;
@@ -415,7 +449,7 @@
   }
 
     /* Add the slide-up animation to each section */
- .fade-up {
+  .fade-up {
     animation-name: slideUp;
     animation-duration: 2s;
     animation-fill-mode: both; /* keeps the final state of the animation after it ends */
@@ -470,3 +504,44 @@
       transform: translateY(0);
     }
   }
+
+
+  .loader-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    display: flex;
+    height: 100%;
+  }
+  
+  .loader-icon {
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    height: 100px;
+    width: 100px;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+  
+  
+  
+  
+  

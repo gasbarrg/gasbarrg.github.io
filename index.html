@@ -10,12 +10,40 @@
 
     gtag('config', 'G-0FR5THSR74');
     </script>
+
+
+    <script>
+      var myVar;
+      
+      function loaderFunc() {
+        myVar = setTimeout(showPage, 2000);
+      }
+      
+      function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("hiddenDiv").style.display = "block";
+      }
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GG Engineering</title>
     <link rel="stylesheet" href="styles.css">
+
+
+
+
   </head>
-  <body>
+  <body onload="loaderFunc()" style="margin:0;">
+
+    <div class="loader-container" id="loader">
+      <svg class="loader-icon" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="40" fill="#FF3D3D" stroke="#000" stroke-width="10" />
+        <text x="50" y="60" fill="#000" font-size="30" font-weight="bold" text-anchor="middle">GG</text>
+      </svg>
+    </div>
+
+    <div style="display:none;" id="hiddenDiv">
     <header>
         <!-- <a href="#" class="logo">GG</a> -->
         <nav>
@@ -24,20 +52,31 @@
           </ul>
         </nav>
     </header>
+
+
+    
+    
+    
+    
     <main>
-      <section id="about">
+      <section id="home">
         <div class="about-container">
-        
-          <div class="fade-up" style="animation-delay: 0ms;"><h2>About Me</h2></div>
-          <div class="fade-up" style="animation-delay: 200ms;"><p>Computer Engineer - Controls Engineer</p></div>
-          <ul>
-            <div class="fade-up" style="animation-delay: 400ms;">
-                <li><strong>School: </strong>Grand Valley State University</li>
-                <li><strong>Location:</strong> Grand Rapids, MI</li>
+          <div class="fade-up" style="animation-delay: 0ms;"><p class="code">printf("<span class="code-text">Hello, World! My Name Is</span>")</p></div>
+          <div class="fade-up" style="animation-delay: 200ms;"><h1>Gabriel Gasbarre</h1></div>
+          <div class="fade-up" style="animation-delay: 400ms;"><p class="code">&ltdiv&gt</p></div>
+          <div class="fade-up" style="animation-delay: 600ms;">
+            <p style="margin-left: 20px; padding-right: 80px;">
+              I am a Computer Engineer studying at Grand Valley State University.
+              Currently, I'm exploring new technologies and creating innovative automation solutions at 
+              <a href="https://www.jrautomation.com/">JR Automation.</a></p></div>
+              <div class="fade-up" style="animation-delay: 800ms;"><p class="code" style="text-align: right; padding-right: 80px;">&ltdiv&gt</p></div>
+              <ul>
+            <div class="fade-up" style="animation-delay: 1000ms;">
             </div>
         </ul>
         </div>
       </section>
+
 
       <section id="projects">
         <div class="project-header"> 
@@ -81,6 +120,7 @@
       <section>
         <div class = "link-container">
             <p>Github:</p><a href="https://github.com/gasbarrg/">@gasbarrg</a>
+            <p>LinkedIn:</p><a href="https://github.com/gasbarrg/">@gabe-gasbarre</a>
         </div>
       </section>
 
@@ -104,5 +144,6 @@
     </footer>
 
     <script src="main.js"></script>
+  </div>
   </body>
 </html>
