@@ -41,27 +41,28 @@
 <!-- AOS Library Init-->
   <script src="css/aos.js"></script>
   <script>
-    AOS.init({
-      easing: 'ease-in-out-sine'
-    });
+    AOS.init({});
   </script>
 
 
+ <!-- Loader TODO: FIX
   <div class="loader-container" id="loader">
     <svg class="loader-icon" viewBox="0 0 100 100">
       <circle cx="50" cy="50" r="40" fill="#FF3D3D" stroke="#000" stroke-width="10" />
       <text x="50" y="60" fill="#000" font-size="30" font-weight="bold" text-anchor="middle">GG</text>
     </svg>
   </div>
+    <div style="display:none;" id="hiddenDiv" data-aos="fade-up">
+        </div>
+    -->
 
-  <div style="display:none;" id="hiddenDiv">
     <header>
       <!-- <a href="#" class="logo">GG</a> -->
       <nav>
         <ul>
-          <li><a class="fade-down" style="animation-delay:100ms;" href="#home">Home</a>
-            <a class="fade-down" style="animation-delay:200ms;" href="#about">About</a>
-            <a class="fade-down" style="animation-delay:300ms;" href="#projects">Projects</a>
+          <li><a class="fade-down" style="animation-delay:500ms;" href="#home">Home</a>
+            <a class="fade-down" style="animation-delay:600ms;" href="#about">About</a>
+            <a class="fade-down" style="animation-delay:700ms;" href="#projects">Projects</a>
           </li>
         </ul>
       </nav>
@@ -72,27 +73,27 @@
     <main>
       <section id="home">
         <div class="about-container">
-          <div class="fade-up" style="animation-delay: 0ms;">
+          <div class="fade-up" style="animation-delay: 500ms;">
             <p class="code">printf("<span class="code-text">Hello, World! My Name Is</span>")</p>
           </div>
-          <div class="fade-up" style="animation-delay: 200ms;">
+          <div class="fade-up" style="animation-delay: 700ms;">
             <h1>Gabriel Gasbarre</h1>
           </div>
-          <div class="fade-up" style="animation-delay: 400ms;">
+          <div class="fade-up" style="animation-delay: 900ms;">
             <p class="code">&ltdiv&gt</p>
           </div>
-          <div class="fade-up" style="animation-delay: 600ms;">
+          <div class="fade-up" style="animation-delay: 1100ms;">
             <p style="margin-left: 20px; padding-right: 80px;">
               I am a Computer Engineer studying at Grand Valley State University.
               Currently, I'm exploring new technologies and creating innovative automation solutions at
               <a href="https://www.jrautomation.com/">JR Automation.</a>
             </p>
           </div>
-          <div class="fade-up" style="animation-delay: 800ms;">
+          <div class="fade-up" style="animation-delay: 1300ms;">
             <p class="code" style="text-align: right; padding-right: 80px;">&lt/div&gt</p>
           </div>
           <ul>
-            <div class="fade-up" style="animation-delay: 1000ms;">
+            <div class="fade-up" style="animation-delay: 1500ms;">
             </div>
           </ul>
         </div>
@@ -161,7 +162,7 @@
       <section id="stats">
         <div class="stats-container">
           <img
-            src="https://github-readme-stats.vercel.app/api/top-langs/?username=gasbarrg&amp;custom_title=Gabes Most Used Languages on Github&amp;layout=compact&amp;show_icons=true&amp;title_color=fff&amp;border_color=ff3b3b&amp;text_color=9f9f9f&amp;theme=transparent&amp;hide=css,scss&amp;card_width=500px&amp;langs_count=10">
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=gasbarrg&amp;custom_title=Gabe's Most Used Languages on Github&amp;layout=compact&amp;show_icons=true&amp;title_color=fff&amp;border_color=ff3b3b&amp;text_color=9f9f9f&amp;theme=transparent&amp;hide=css,scss&amp;card_width=500px&amp;langs_count=10">
         </div>
       </section>
     </main>
@@ -184,7 +185,6 @@
     </footer>
 
     <script src="main.js"></script>
-  </div>
 </body>
 
 </html>
