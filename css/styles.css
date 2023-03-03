@@ -60,6 +60,7 @@
   nav {
     width:100%;
     text-align: right;
+    
   }
   
   nav ul {
@@ -70,6 +71,7 @@
   nav li {
     margin-left: 30px;
     width: 100%;
+    
   }
   
   nav li:first-child {
@@ -85,7 +87,6 @@
     content: "0" counter(item) ".";
     margin-right: 5px;
     color: var(--red);
-    font-size: var(--fz-xxs);
 }
 
   nav a {
@@ -95,8 +96,10 @@
     font-weight: bold;
     color: #fff;
     text-decoration: none;
-    transition: all 0.3s ease;
     padding: 10px;
+    margin:auto;
+    left: -500px;
+    position: relative;
   }
   
   nav a:hover {
@@ -466,8 +469,8 @@
     animation-fill-mode: both; /* keeps the final state of the animation after it ends */
   }
 
-  .fade-down{
-    animation-name: slideDown;
+  .fade-in-right{
+    animation-name: fadeRight;
     animation-duration: 2s;
     animation-fill-mode: both;
   }
@@ -492,14 +495,13 @@
     }
   }
 
-  @keyframes slideDown {
+  @keyframes fadeRight {
     0% {
       opacity: 0;
-      transform: translateX(80px);
     }
     100% {
       opacity: 1;
-      transform: translateX(0px);
+      left: 0px;
     }
   }
   .loader-container {
