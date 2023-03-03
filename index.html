@@ -1,81 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0FR5THSR74"></script>
-    <script>
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0FR5THSR74"></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-0FR5THSR74');
-    </script>
+  </script>
 
+  <!--Loading Animation-->
+  <script>
+    var myVar;
 
-    <script>
-      var myVar;
-      
-      function loaderFunc() {
-        myVar = setTimeout(showPage, 2000);
-      }
-      
-      function showPage() {
-        document.getElementById("loader").style.display = "none";
-        document.getElementById("hiddenDiv").style.display = "block";
-      }
-    </script>
+    function loaderFunc() {
+      myVar = setTimeout(showPage, 2000);
+    }
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gabriel Gasbarre</title>
-    <link rel="stylesheet" href="styles.css">
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("hiddenDiv").style.display = "block";
+    }
+  </script>
 
+  
 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabriel Gasbarre</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <link rel="stylesheet" href="css/aos.css"/>
 
+</head>
 
-  </head>
-  <body onload="loaderFunc()" style="margin:0;">
+<body onload="loaderFunc()" style="margin:0;">
 
-    <div class="loader-container" id="loader">
-      <svg class="loader-icon" viewBox="0 0 100 100">
-        <circle cx="50" cy="50" r="40" fill="#FF3D3D" stroke="#000" stroke-width="10" />
-        <text x="50" y="60" fill="#000" font-size="30" font-weight="bold" text-anchor="middle">GG</text>
-      </svg>
-    </div>
+<!-- AOS Library Init-->
+  <script src="css/aos.js"></script>
+  <script>
+    AOS.init({
+      easing: 'ease-in-out-sine'
+    });
+  </script>
+  <div class="loader-container" id="loader">
+    <svg class="loader-icon" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="40" fill="#FF3D3D" stroke="#000" stroke-width="10" />
+      <text x="50" y="60" fill="#000" font-size="30" font-weight="bold" text-anchor="middle">GG</text>
+    </svg>
+  </div>
 
-    <div style="display:none;" id="hiddenDiv">
+  <div style="display:none;" id="hiddenDiv">
     <header>
-        <!-- <a href="#" class="logo">GG</a> -->
-        <nav>
-          <ul>
-            <li><a class="fade-down" style="animation-delay:100ms;" href="#home">Home</a> 
-                <a class="fade-down" style="animation-delay:200ms;" href="#about">About</a>
-                <a class="fade-down" style="animation-delay:300ms;" href="#projects">Projects</a></li>
-          </ul>
-        </nav>
+      <!-- <a href="#" class="logo">GG</a> -->
+      <nav>
+        <ul>
+          <li><a class="fade-down" style="animation-delay:100ms;" href="#home">Home</a>
+            <a class="fade-down" style="animation-delay:200ms;" href="#about">About</a>
+            <a class="fade-down" style="animation-delay:300ms;" href="#projects">Projects</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
 
-    
-    
-    
-    
+
+
+
+
     <main>
       <section id="home">
         <div class="about-container">
-          <div class="fade-up" style="animation-delay: 0ms;"><p class="code">printf("<span class="code-text">Hello, World! My Name Is</span>")</p></div>
-          <div class="fade-up" style="animation-delay: 200ms;"><h1>Gabriel Gasbarre</h1></div>
-          <div class="fade-up" style="animation-delay: 400ms;"><p class="code">&ltdiv&gt</p></div>
+          <div class="fade-up" style="animation-delay: 0ms;">
+            <p class="code">printf("<span class="code-text">Hello, World! My Name Is</span>")</p>
+          </div>
+          <div class="fade-up" style="animation-delay: 200ms;">
+            <h1>Gabriel Gasbarre</h1>
+          </div>
+          <div class="fade-up" style="animation-delay: 400ms;">
+            <p class="code">&ltdiv&gt</p>
+          </div>
           <div class="fade-up" style="animation-delay: 600ms;">
             <p style="margin-left: 20px; padding-right: 80px;">
               I am a Computer Engineer studying at Grand Valley State University.
-              Currently, I'm exploring new technologies and creating innovative automation solutions at 
-              <a href="https://www.jrautomation.com/">JR Automation.</a></p></div>
-              <div class="fade-up" style="animation-delay: 800ms;"><p class="code" style="text-align: right; padding-right: 80px;">&lt/div&gt</p></div>
-              <ul>
+              Currently, I'm exploring new technologies and creating innovative automation solutions at
+              <a href="https://www.jrautomation.com/">JR Automation.</a>
+            </p>
+          </div>
+          <div class="fade-up" style="animation-delay: 800ms;">
+            <p class="code" style="text-align: right; padding-right: 80px;">&lt/div&gt</p>
+          </div>
+          <ul>
             <div class="fade-up" style="animation-delay: 1000ms;">
             </div>
-        </ul>
+          </ul>
         </div>
       </section>
 
@@ -86,66 +106,71 @@
       </section>
 
       <section id="projects">
-        <div class="project-header"> 
+        <div class="project-header">
           <h2>Projects</h2>
         </div>
         <div class="project-container-wrapper">
-          <div class="project-container">
+          <div class="project-container" data-aos="fade-up" >
             <img src="res/chess2.png" alt="Project 1">
             <h3>Project 1</h3>
             <p>Description of Project 1</p>
           </div>
-          <div class="project-container">
+          <div class="project-container" data-aos="fade-up" >
             <img src="res/chess2.png" alt="Project 2">
             <h3>Project 2</h3>
             <p>Description of Project 2</p>
           </div>
-          <div class="project-container">
+          <div class="project-container" data-aos="fade-up" >
             <img src="res/chess2.png" alt="Project 3">
             <h3>Project 3</h3>
             <p>Description of Project 3</p>
           </div>
-          <div class="project-container">
+          <div class="project-container" data-aos="fade-up">
             <img src="res/chess2.png" alt="Project 4">
-            <h3>Project 1</h3>
-            <p>Description of Project 1</p>
+            <h3>Project 4</h3>
+            <p>Description of Project 4</p>
           </div>
-          <div class="project-container">
+          <div class="project-container" data-aos="fade-up">
             <img src="res/chess2.png" alt="Project 5">
-            <h3>Project 1</h3>
-            <p>Description of Project 1</p>
+            <h3>Project 5</h3>
+            <p>Description of Project 5</p>
           </div>
-          <div class="project-container">
+          <div class="project-container" data-aos="fade-up">
             <img src="res/chess2.png" alt="Project 6">
-            <h3>Project 1</h3>
-            <p>Description of Project 1</p>
+            <h3>Project 6</h3>
+            <p>Description of Project 6</p>
           </div>
         </div>
-    </section>
+      </section>
 
-    <section id="links">
-      <div class="project-header"> 
-        <h2>Links</h2>
-      </div>
-      <div class="grid-container">
-        <div class="grid-item"><p>Github:</p></div>
-        <div class="grid-item"><a href="https://github.com/gasbarrg">@gasbarrg</a></div>
-        <div class="grid-item"><p>LinkedIn:</p></div>
-        <div class="grid-item"><a href="https://www.linkedin.com/in/gabe-gasbarre/">@gabe-gasbarre</a></div>
-      </div>
-  </section>
+      <section id="links">
+        <div class="project-header">
+          <h2>Links</h2>
+        </div>
+        <div class="grid-container">
+          <div class="grid-item">
+            <p>Github:</p>
+          </div>
+          <div class="grid-item"><a href="https://github.com/gasbarrg">@gasbarrg</a></div>
+          <div class="grid-item">
+            <p>LinkedIn:</p>
+          </div>
+          <div class="grid-item"><a href="https://www.linkedin.com/in/gabe-gasbarre/">@gabe-gasbarre</a></div>
+        </div>
+      </section>
 
-  <section id="stats">
-    <div class="stats-container">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gasbarrg&amp;custom_title=Gabes Most Used Languages on Github&amp;layout=compact&amp;show_icons=true&amp;title_color=fff&amp;border_color=ff3b3b&amp;text_color=9f9f9f&amp;theme=transparent&amp;hide=css,scss&amp;card_width=500px&amp;langs_count=10">
-    </div>
-  </section>
+      <section id="stats">
+        <div class="stats-container">
+          <img
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=gasbarrg&amp;custom_title=Gabes Most Used Languages on Github&amp;layout=compact&amp;show_icons=true&amp;title_color=fff&amp;border_color=ff3b3b&amp;text_color=9f9f9f&amp;theme=transparent&amp;hide=css,scss&amp;card_width=500px&amp;langs_count=10">
+        </div>
+      </section>
     </main>
 
-    <div orientation = "right" class="side-style fade-up" style="animation-delay: 1200ms;">
-        <div class = "email-side-style">
-            <a href="mailto:gasbarregabe@gmail.com">gasbarregabe@gmail.com</a>
-        </div>
+    <div orientation="right" class="side-style fade-up" style="animation-delay: 1200ms;">
+      <div class="email-side-style">
+        <a href="mailto:gasbarregabe@gmail.com">gasbarregabe@gmail.com</a>
+      </div>
     </div>
 
     <footer>
@@ -161,5 +186,6 @@
 
     <script src="main.js"></script>
   </div>
-  </body>
+</body>
+
 </html>
