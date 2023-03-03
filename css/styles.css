@@ -22,8 +22,7 @@
   /* Header Styles */
   header {
     background-color: rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    justify-content: space-between;
+    padding: 15px;
     position: fixed;
     top: 0;
     left: 0;
@@ -59,18 +58,18 @@
   }
   
   nav {
-    width:100%;
-    display: flex;
-    float: right;
+    width:inherit;
+    
   }
   
   nav ul {
     list-style: none;
-    display: flex;
+    
   }
   
   nav li {
     margin-left: 30px;
+    text-align: right;
   }
   
   nav li:first-child {
@@ -79,7 +78,8 @@
   }
   
   nav ul li a {
-    counter-increment: item 1;
+    counter-increment: item 1;  
+    
   }
 
   nav ul li a::before {
@@ -87,7 +87,6 @@
     margin-right: 5px;
     color: var(--red);
     font-size: var(--fz-xxs);
-    text-align: right;
 }
 
   nav a {
