@@ -58,28 +58,26 @@
   }
   
   nav {
-    width:inherit;
+    display: flex;
+    width:100%;
     
   }
   
   nav ul {
     list-style: none;
-    
   }
   
   nav li {
     margin-left: 30px;
-    text-align: right;
   }
   
   nav li:first-child {
     margin-left: 0;
-
   }
+  
   
   nav ul li a {
     counter-increment: item 1;  
-    
   }
 
   nav ul li a::before {
