@@ -59,6 +59,7 @@
   }
   
   nav {
+    width:100%;
     display: flex;
     float: right;
   }
@@ -392,6 +393,9 @@
     color: #ff3b3b;
     }
   
+    footer li {
+      list-style: none;
+    }
 
     @media only screen and (min-width: 1080px){
     .side-style{
@@ -493,11 +497,11 @@
   @keyframes slideDown {
     0% {
       opacity: 0;
-      transform: translateY(-40px);
+      transform: translateX(-80px);
     }
     100% {
       opacity: 1;
-      transform: translateY(0);
+      transform: translateX(0px);
     }
   }
   .loader-container {
