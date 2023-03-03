@@ -333,15 +333,18 @@
     transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
     height: 400px;
     width: 300px;
+    overflow: hidden;
+    isolation: isolate;
+    position: relative;
   }
 
   .project-container h3 {
     padding: 10px;
+    padding-top: 60px;
   }
   
   .project-container:hover {
@@ -353,14 +356,17 @@
 
   .project-container img { 
     max-width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    position: relative;
   }
 
-  /*
-  .project-container img:hover {
-    transform: scale(1.1);
+
+  .project-container:hover img {
+    transform: scale(1.25);
     transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
   }
-*/    
+ 
     /* Footer Styles */
     footer {
     background-color: rgba(0, 0, 0, 0.8);
