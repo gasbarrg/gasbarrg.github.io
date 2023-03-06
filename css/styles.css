@@ -138,6 +138,7 @@
     animation-name: fadein;
     animation-duration: 2s;
     animation-fill-mode: both;
+    vertical-align: auto;
     backdrop-filter: blur(1px);
   }
 
@@ -612,6 +613,10 @@
   @media only screen and (max-width: 1080px){
     .side-style{
       display: none;
+    }
+
+    .about-container {
+      min-height: 20vh;
     }
 
     .wallpaper {
