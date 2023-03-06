@@ -627,6 +627,10 @@
       position: relative;
     }
     
+    .section {
+      padding-top: 10px;
+    }
+
   /* Project Container Styles */
   .project-container {
     padding: 10%;
