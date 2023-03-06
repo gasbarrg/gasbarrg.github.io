@@ -30,6 +30,7 @@
     --slate: #BFBFBF;
     color: var(--slate);
     --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    --border-radius: 6px
   }
   
 
@@ -549,10 +550,16 @@
     list-style: none;
     padding: 0px;
     margin: 0px;
+    position: relative;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(12, 1fr);
+    -webkit-box-align: center;
+    align-items: center;
   }
 
   .project-image{
-    box-shadow: 0 10px 30px -15px var(--navy-shadow);
+    box-shadow: 0 10px 30px -15px var(--charcoal);
     grid-area: 1 / 6 / -1 / -1;
     position: relative;
     z-index: 1;
@@ -567,7 +574,12 @@
     margin: auto;
     position: relative;
     grid-area: 1 / 1 / -1 / 7;
+    background-color: var(--light-charcoal05);
+    z-index: 2;
+    padding: 25px;
+    border-radius: var(--border-radius);
   }
+  
 
 
 
@@ -577,3 +589,4 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
