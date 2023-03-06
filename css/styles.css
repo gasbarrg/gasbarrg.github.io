@@ -133,7 +133,7 @@
     padding: 100px;
     padding-top: 200px;
     border-radius: 5px;
-    min-height: 60vh;
+    min-height: 30vh;
     opacity: 0;
     animation-name: fadein;
     animation-duration: 2s;
@@ -550,12 +550,12 @@
   }
 
   .project-content h3 {
-    font-size: 4vw;
+    font-size: 4vmin;
     text-align: left;
   }
 
   .project-content-l h3 {
-    font-size: 4vw;
+    font-size: 4vmin;
     text-align: right;
   }
 
