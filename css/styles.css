@@ -551,6 +551,7 @@
     list-style: none;
     padding: 0px;
     margin: 0px;
+    padding: 100px;
     max-width: 1000px;
     position: relative;
     display: grid;
@@ -560,7 +561,7 @@
     align-items: center;
   }
 
-  .project-image{
+  .project-image-r{
     margin: auto;
     box-shadow: 0 10px 30px -15px var(--charcoal);
     grid-area: 1 / 6 / -1 / -1;
@@ -571,15 +572,53 @@
     transition: var(--transition);
   }
 
-  .project-image:hover{
+  .project-image-l{
+    margin: auto;
+    box-shadow: 0 10px 30px -15px var(--charcoal);
+    grid-area: 1 / 1 / -1 / 6;
+    position: relative;
+    z-index: 1;
+    background: var(--light-red);
+    overflow: hidden;
+    transition: var(--transition);
+  }
+  .project-image-l img {
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    transition: var(--transition);
+    vertical-align: middle;
+  }
+
+  .project-content-l{
+    margin: auto;
+    position: relative;
+    grid-area: 1 / 5 / -1 / 11;
+    background-color: var(--light-charcoal08);
+    z-index: 2;
+    padding: 25px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: var(--border-radius);
+  }
+
+  .project-image-l:hover{
     background: none;
   }
 
-  .project-image img:hover{
+  .project-image-l img:hover{
     opacity: 1;
   }
 
-  .project-image img {
+  .project-image-r:hover{
+    background: none;
+  }
+
+  .project-image-r img:hover{
+    opacity: 1;
+  }
+
+  .project-image-r img {
     width: 100%;
     height: 100%;
     opacity: .5;
@@ -590,7 +629,7 @@
   .project-content{
     margin: auto;
     position: relative;
-    grid-area: 1 / 2 / -1 / 7;
+    grid-area: 1 / 1 / -1 / 7;
     background-color: var(--light-charcoal08);
     z-index: 2;
     padding: 25px;
