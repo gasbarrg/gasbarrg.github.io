@@ -20,6 +20,7 @@
     background-color: #1f1f1f;
     --red:  #BE3144;
     --light-red: #EC625F;
+    --light-red05: #ec615f21;
     --dark-red: #B50717;
     --light-slate: #ECECEC;
     --white: #ffffff; 
@@ -291,10 +292,11 @@
  
     /* Footer Styles */
     footer {
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 20px;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+    background: radial-gradient(ellipse at bottom, var(--light-red05) 0%, #090a0f 90%);
+    padding-bottom: 20px;
     text-align: center;
-    margin-top: 80px;
     }
     
     footer p {
@@ -460,7 +462,6 @@
   }
   
   .stats-container{
-    padding-top: 100px;
     padding: 10px;
     display:flex;
     justify-content: center;
@@ -475,7 +476,6 @@
     grid-row-gap: 10px;
     justify-content: center;
     justify-items: center;
-    padding-bottom: 200px;
     max-width: 80%;
   }
   
@@ -515,6 +515,7 @@
     background: var(--light-red);
     overflow: hidden;
     transition: var(--transition);
+    border: 1px solid var(--light-red)
   }
 
   .project-image-l{
@@ -526,6 +527,7 @@
     background: var(--light-red);
     overflow: hidden;
     transition: var(--transition);
+    border: 1px solid var(--light-red); 
   }
   .project-image-l img {
     width: 100%;
@@ -605,7 +607,7 @@
 
   .to-top {
     display: block;
-    margin: 0rem auto 1rem;
+    margin: auto;
     width: 4rem;
     height: 4rem;
     text-align: center;
