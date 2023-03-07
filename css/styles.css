@@ -595,8 +595,6 @@
   }
   
 
-
-
   .wallpaper {
     display: flex;
     top: 50%;
@@ -605,7 +603,23 @@
   }
 
 
+  .to-top {
+    display: block;
+    margin: 0rem auto 1rem;
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
+    border: none;
+    background-color: var(--light-slate);
+    color: var(--light-red);
+    border-radius: 50%;
+    cursor: pointer;
+  }
 
+  .arrow-up::before{
+    font-size: 2em;
+    content: "\2191";
+  }
 
 
 /* MOBILE SETTINGS */ 
