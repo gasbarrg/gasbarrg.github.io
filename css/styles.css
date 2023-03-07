@@ -294,8 +294,8 @@
  
     /* Footer Styles */
     footer {
-    border-top-left-radius: 40%;
-    border-top-right-radius: 40%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
     background: radial-gradient(ellipse at bottom, var(--light-red02) 0%, #090a0f 90%);
     padding-bottom: 10px;
     padding-top: 20px;
@@ -657,9 +657,47 @@
     vertical-align: middle;
     padding:5px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-
   }
 
+/* List */
+.skills-container ul {
+  counter-reset: index;  
+  padding: 0;
+  max-width: 400px;
+}
+
+/* List element */
+.skills-container li {
+  counter-increment: index; 
+  display: flex;
+  align-items: center;
+  align-content:center;
+  padding: 12px 12px;
+  box-sizing: border-box;
+  background-color: var(--light-charcoal05);
+  border-radius: 5px;
+  margin-top: 8px;
+}
+
+
+/* Element counter */
+.skills-container li::before {
+  content: counters(index, ".", decimal-leading-zero);
+  font-size: 1.5rem;
+  text-align: right;
+  font-weight: bold;
+  min-width: 30px;
+  padding-right: 12px;
+  font-variant-numeric: tabular-nums;
+  align-self: flex-start;
+  background-image: linear-gradient(to bottom, var(--light-red), var(--light-slate));
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+  
 
 
 /* MOBILE SETTINGS */ 
