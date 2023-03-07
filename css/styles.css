@@ -20,7 +20,8 @@
     background-color: #1f1f1f;
     --red:  #BE3144;
     --light-red: #EC625F;
-    --light-red05: #ec615f21;
+    --light-red05: #ec615f7e;
+    --light-red02: #ec615f21;
     --dark-red: #B50717;
     --light-slate: #ECECEC;
     --white: #ffffff; 
@@ -294,7 +295,7 @@
     footer {
     border-top-left-radius: 40%;
     border-top-right-radius: 40%;
-    background: radial-gradient(ellipse at bottom, var(--light-red05) 0%, #090a0f 90%);
+    background: radial-gradient(ellipse at bottom, var(--light-red02) 0%, #090a0f 90%);
     padding-bottom: 20px;
     text-align: center;
     }
@@ -512,10 +513,9 @@
     grid-area: 1 / 6 / -1 / -1;
     position: relative;
     z-index: 1;
-    background: var(--light-red);
+    background: var(--light-red05);
     overflow: hidden;
     transition: var(--transition);
-    border: 1px solid var(--light-red)
   }
 
   .project-image-l{
@@ -524,10 +524,9 @@
     grid-area: 1 / 1 / -1 / 6;
     position: relative;
     z-index: 1;
-    background: var(--light-red);
+    background: var(--light-red05);
     overflow: hidden;
     transition: var(--transition);
-    border: 1px solid var(--light-red); 
   }
   .project-image-l img {
     width: 100%;
