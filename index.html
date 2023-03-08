@@ -43,7 +43,7 @@
   <script src="css/aos.js"></script>
   <script>
     AOS.init({
-      offset: 60, // offset (in px) from the original trigger point
+      offset: 80, // offset (in px) from the original trigger point
     });
   </script>
 
@@ -117,18 +117,18 @@
     </section>
 
     <section id="about">
-      <div class="about-container">
-        <h3>About Me</h3>
-        <p class="intro">
+      <div class="about-container" data-aos="fade-up">
+        <h3 data-aos="fade-up" data-aos-delay="100">About Me</h3>
+        <p data-aos="fade-up" data-aos-delay="200">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui atque reprehenderit aspernatur vel quia?
           Consequatur distinctio tempore quidem nemo facere nulla culpa minima veritatis molestiae. Praesentium repellat
           pariatur iusto cumque.
         </p>
-        <p class="code">
+        <p class="code" data-aos="fade-up" data-aos-delay="300">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat culpa tenetur voluptatum sed at quasi
           numquam accusamus libero laudantium non quos maiores, sequi vitae? Veniam quam corporis cum obcaecati eius!
         </p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, consectetur ipsum. Laboriosam blanditiis
+        <p data-aos="fade-up" data-aos-delay="400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, consectetur ipsum. Laboriosam blanditiis
           nulla culpa, fugit est suscipit quibusdam vero cumque hic reprehenderit vel? Nam totam aliquam optio quaerat
           nemo!</p>
       </div>
@@ -142,7 +142,7 @@
       </div>
 
       <div class="featured-projects">
-        <div class="project-content-r">
+        <div class="project-content-r" data-aos="fade-right">
           <h3>Featured Projects</h3>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, consectetur reiciendis. Quibusdam, voluptate atque. Doloribus nam tempora, sed nisi reprehenderit magni vero similique nemo ut, magnam perferendis deleniti nostrum atque.</p>
         <div class="tag-container">
@@ -152,7 +152,7 @@
           <div class="tag">CSS</div>
         </div>
         </div>
-          <div class="project-image-r">
+          <div class="project-image-r" data-aos="fade-left">
             <a href="TODO" alt="Project 1">
               <div style="max-width: 400px; display: block;">
                 <img src="res/chess2.png">
@@ -162,7 +162,7 @@
       </div>
 
       <div class="featured-projects">
-        <div class="project-content-l">
+        <div class="project-content-l" data-aos="fade-left">
           <h3>Featured Projects</h3>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, consectetur reiciendis. Quibusdam, voluptate atque. Doloribus nam tempora, sed nisi reprehenderit magni vero similique nemo ut, magnam perferendis deleniti nostrum atque.</p>
           <div class="tag-container">
@@ -172,7 +172,7 @@
             <div class="tag">CSS</div>
           </div>
         </div>
-        <div class="project-image-l">
+        <div class="project-image-l" data-aos="fade-right">
           <a href="TODO" alt="Project 1">
             <div style="max-width: 400px; display: block;">
               <img src="res/chess2.png">
@@ -182,40 +182,40 @@
       </div>
 
       <div class="project-container-wrapper" >
-        <div class="project-container">
+        <div class="project-container" data-aos="fade-up">
           <img src="res/chess2.png" alt="Project 1">
           <h3>Project 1</h3>
           <p>Description of Project 1</p>
         </div>
-        <div class="project-container" >
+        <div class="project-container" data-aos="fade-up">
           <img src="res/chess2.png" alt="Project 2">
           <h3>Project 2</h3>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet quam sunt, adipisci minima magni incidunt
             velit voluptatibus repellat aliquam porro neque ut ipsum vero delectus officiis natus suscipit eligendi
             molestiae.</p>
         </div>
-        <div class="project-container" >
+        <div class="project-container" data-aos="fade-up">
           <img src="res/chess2.png" alt="Project 3">
           <h3>Project 3</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, similique ipsa! Velit dolorum optio impedit
             laborum odit nisi voluptates incidunt autem, ad, accusamus reprehenderit esse aliquam quas sint quae
             assumenda?</p>
         </div>
-        <div class="project-container" >
+        <div class="project-container" data-aos="fade-up">
           <img src="res/chess2.png" alt="Project 4">
           <h3>Project 4</h3>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime accusantium alias ea exercitationem dolor
             corporis aut esse! Placeat, laborum eos architecto ratione dolore neque saepe maxime consequatur nulla ea
             nam?</p>
         </div>
-        <div class="project-container" >
+        <div class="project-container" data-aos="fade-up">
           <img src="res/chess2.png" alt="Project 5">
           <h3>Project 5</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione tempora soluta qui cum veritatis nam
             eveniet fugit ducimus. Facilis ea, recusandae debitis cumque temporibus nobis? Dolores eum exercitationem
             maxime cumque!</p>
         </div>
-        <div class="project-container" >
+        <div class="project-container" data-aos="fade-up">
           <img src="res/chess2.png" alt="Project 6">
           <h3>Project 6</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, cumque molestiae iste repudiandae hic
@@ -322,8 +322,8 @@
   </div>
 
   <footer>
-    <button type="button" class="to-top" onclick="window.location.href='#home'">
-      <i class="arrow-up"></i>
+    <button type="button" class="to-top" onclick="window.location.href='#home'" data-aos="flip-up" data-aos-delay="200">
+      <i class="arrow-up" ></i>
     </button>
     <p>Handmade with &hearts; by Gabriel Gasbarre 2023</p>
       <!--<ul>
