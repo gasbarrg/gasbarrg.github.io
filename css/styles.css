@@ -20,7 +20,7 @@ body {
   --red: #BE3144;
   --light-red: #EC625F;
   --light-red05: #ec615f7e;
-  --light-red02: #ec615f18;
+  --light-red02: #ec615f34;
   --dark-red: #B50717;
   --light-slate: #ECECEC;
   --white: #ffffff;
@@ -29,6 +29,7 @@ body {
   --light-charcoal05: #3333339D;
   --light-charcoal08: #333333d3;
   --light-charcoal: #333333;
+  --transparent: #33333300;
   --slate: #BFBFBF;
   color: var(--slate);
   --transition-short: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -92,7 +93,7 @@ header .container {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #ffffff;
+  color: var(--slate);
   text-decoration: none;
 }
 
@@ -141,7 +142,7 @@ nav a {
 }
 
 nav a:hover {
-  color: var(--red);
+  color: var(--light-red);
   background-color: var(--slate);
   border-radius: var(--border-radius-small);
 }
@@ -152,11 +153,11 @@ nav a:hover {
 
 /*---------------FOOTER STYLES-------------------------*/
 footer {
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
-  background: radial-gradient(ellipse at bottom, var(--light-red02) 0%, #090a0f 90%);
-  padding-bottom: 10px;
-  padding-top: 20px;
+  border-top-left-radius: 30%;
+  border-top-right-radius: 30%;
+  background: radial-gradient(ellipse at bottom, var(--light-red02) 0%, var(--transparent) 70%);
+  padding-bottom: 45px;
+  padding-top: 75px;
   text-align: center;
   max-height: 100px;
 }
@@ -218,7 +219,7 @@ footer li {
   padding: 100px;
   border-radius: var(--border-radius-large);
   min-height: 30vh;
-  opacity: 0;
+  opacity: 1;
   animation-name: fadein;
   animation-duration: 2s;
   animation-fill-mode: both;
@@ -343,6 +344,7 @@ footer li {
   isolation: isolate;
   position: relative;
   transition: var(--transition-long);
+  backdrop-filter: blur(1px);
 }
 
 .project-container:hover {
@@ -357,7 +359,7 @@ footer li {
 }
 
 .project-container:hover img {
-  transform: scale(1.25);
+  transform: scale(1.3);
 }
 
 .project-container h3 {
@@ -414,6 +416,7 @@ footer li {
   background-color: var(--light-charcoal08);
   z-index: 2;
   border-radius: var(--border-radius-large);
+  backdrop-filter: blur(1px);
 }
 
 .project-image-l {
@@ -460,6 +463,7 @@ footer li {
   background-color: var(--light-charcoal08);
   z-index: 2;
   z-index: 3;
+  backdrop-filter: blur(1px);
   border-radius: var(--border-radius-large);
 }
 
@@ -674,7 +678,6 @@ footer li {
 
 .links-container p {
   color: var(--slate);
-  opacity: .8;
 }
 
 .links-container a {
@@ -784,21 +787,13 @@ footer li {
   .about-container p {
     font-size: 12px;
     line-height: 1.5;
-    opacity: 0.8;
+    opacity: 1;
     text-align: left;
   }
 
   nav a {
-    text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 14px;
-    font-weight: bold;
-    color: #fff;
-    text-decoration: none;
-    padding: 4px;
-    margin: auto;
-    left: -500px;
-    position: relative;
   }
 
   .section {
