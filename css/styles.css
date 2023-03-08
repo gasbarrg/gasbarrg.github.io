@@ -387,6 +387,7 @@ footer li {
   margin: 0px;
   max-width: 1000px;
   position: relative;
+  height: auto;
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(10, 1fr);
@@ -759,7 +760,7 @@ footer li {
 
 
 /*-------------MOBILE STYLES--------------*/
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 800px) {
   .side-style {
     display: none;
   }
@@ -829,21 +830,22 @@ footer li {
   }
 
   .project-content-l {
-    grid-area: 1 / 4 / -1 / 11;
+    grid-area: 1 / 2 / -1 / 11;
 
   }
 
-  .project-content {
-    grid-area: 1 / 1 / -1 / 8;
+  .project-content-r {
+    grid-area: 1 / 1 / -1 / 10;
 
   }
 
   .project-image-r {
-    background: none;
+    grid-area: 1 / 5 / -1 / -1;
   }
 
   .project-image-l {
-    background: none;
+    grid-area: 1 / 1 / -1 / 7;
   }
+
 }
 /*----------------------------------------*/
