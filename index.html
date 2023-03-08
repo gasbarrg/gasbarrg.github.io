@@ -42,7 +42,9 @@
   <!-- AOS Library Init-->
   <script src="css/aos.js"></script>
   <script>
-    AOS.init({});
+    AOS.init({
+      offset: 60, // offset (in px) from the original trigger point
+    });
   </script>
 
 
@@ -83,6 +85,9 @@
         <div id="stars4"></div>
         <div id="stars5"></div>
         <div id="stars6"></div>
+        <div id="stars7"></div>
+        <div id="stars8"></div>
+        <div id="stars9"></div>
       </div>
     </section>
 
@@ -219,36 +224,36 @@
         <h2>Coding Languages</h2>
       </div>
       <div class="skills-container">
-        <div class="skill-item" data-aos="flip-up">
+        <div class="skill-item" data-aos="flip-up" data-aos-delay="50">
           <p>Python</p>
         </div>
-        <div class="skill-item" data-aos="flip-down">
+        <div class="skill-item" data-aos="flip-down" data-aos-delay="100">
           <p>C</p>
         </div>
-        <div class="skill-item" data-aos="flip-up">
+        <div class="skill-item" data-aos="flip-up" data-aos-delay="150">
           <p>Java</p>
         </div>
-        <div class="skill-item" data-aos="flip-down">
+        <div class="skill-item" data-aos="flip-down" data-aos-delay="200">
           <p>HTML</p>
         </div>
-        <div class="skill-item" data-aos="flip-up">
+        <div class="skill-item" data-aos="flip-up" data-aos-delay="250">
           <p>CSS</p>
         </div>
-        <div class="skill-item" data-aos="flip-down">
+        <div class="skill-item" data-aos="flip-down"data-aos-delay="300">
           <p>Studio-5000</p>
         </div>
-        <div class="skill-item" data-aos="flip-up">
+        <div class="skill-item" data-aos="flip-up" data-aos-delay="350">
           <p>MATLAB</p>
         </div>
-        <div class="skill-item" data-aos="flip-up">
+        <div class="skill-item" data-aos="flip-up" data-aos-delay="400">
           <p>Verilog HDL</p>
         </div>
-        <div class="skill-item" data-aos="flip-up">
+        <div class="skill-item" data-aos="flip-up" data-aos-delay="450">
           <p>Shell</p>
         </div>
       </div>
       <section id="stats">
-        <div class="stats-container" data-aos="flip-up">
+        <div class="stats-container" data-aos="flip-up" data-aos-delay="500">
           <img class="github-stats"
             src="https://github-readme-stats.vercel.app/api/top-langs/?username=gasbarrg&amp;custom_title=Gabe's Most Used Languages on Github&amp;layout=compact&amp;show_icons=true&amp;title_color=fff&amp;border_color=ff3b3b&amp;text_color=9f9f9f&amp;theme=transparent&amp;card_width=500px&amp;hide=css,scss&amp;langs_count=10">
         </div>
@@ -256,33 +261,23 @@
     </section>
 
     <section id="controls-exp">
+      <div class="project-header" data-aos="fade-up">
+        <h2>Controls Experience</h2>
+      </div>
       <div class="skills-container">
         <ul>
-          <li>PLC Programming (Allen Bradley)</li>
-          <li>Fanuc Robot Programming</li>
-          <li>HMI Programing </li>
-          <li>Machine Vision (Fanuc iRVision, Apera Vue)</li>
-          <li>Wiring Verification </li>
-          <li>Pneumatics </li>
-          <li>Custom EOAT Development </li>
-          <li>Technical Documentation</li>
-          <li>R&D / Quoting</li>
+          <li data-aos="fade-right">PLC Programming (Allen Bradley)</li>
+          <li data-aos="fade-left">Fanuc Robot Programming</li>
+          <li data-aos="fade-right">HMI Programing </li>
+          <li data-aos="fade-left">Machine Vision (Fanuc iRVision, Apera Vue)</li>
+          <li data-aos="fade-right">Wiring Verification </li>
+          <li data-aos="fade-left">Pneumatics </li>
+          <li data-aos="fade-right">Custom EOAT Development </li>
+          <li data-aos="fade-left">Technical Documentation</li>
+          <li data-aos="fade-right">R&D / Quoting</li>
         </ul>
       </div>
     </section>
-    <!--
-      Controls Experience 
-      PLC Programming (Allen Bradley) 
-      Fanuc Robot Programming
-      HMI Programing 
-      Machine Vision (Fanuc iRVision, Apera Vue) 
-      R&D 
-      Wiring Verification 
-      Pneumatics 
-      Custom EOAT Development 
-      Technical Documentation
-      Quoting 
-    -->
 
     <!--
       Software Experience: 
