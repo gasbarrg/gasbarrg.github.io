@@ -1,12 +1,7 @@
-*{
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-}
-
 html{
    height: 100%;
    overflow: hidden;
+   
  }
 
  body {
@@ -38,9 +33,16 @@ html{
     --box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
   }
 
+  .wallpaper {
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   header {
     background-color: var(--charcoal05);
-    padding: 15px;
+    padding: 5px;
     position: fixed;
     top: 0;
     left: 0;
@@ -50,35 +52,27 @@ html{
   }
   
   h1 {
-    margin: 0px;
-    font-size: clamp(40px, 8vw, 70px);
-    color: var(--light-red);
-    margin-bottom: 20px;
-    align-content: center;
-    width: 100%;
-  }
+    padding: 100px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    position: relative;
+    font-size: clamp(30px, 8vw, 40px);
+    color: var(--slate);
+    text-align: left;
+  } 
   
   header .container {
     justify-content: space-between;
-    height: 20px;
+    height: 10px;
     padding: 0 20px;
     width: 100%;
   
   }
   
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: var(--slate);
-    text-decoration: none;
-  }
   
   nav {
     width: 100%;
     max-width: 1800px;
-
   }
   
   nav ul {
@@ -111,22 +105,44 @@ html{
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 18px;
+    padding: 5px;
     font-weight: bold;
     color: var(--slate);
     text-decoration: none;
-    padding: 10px;
     margin: auto;
     position: relative;
   }
   
   nav a:hover {
-    color: var(--light-red);
+    color: var(--dark-red);
     background-color: var(--slate);
     border-radius: var(--border-radius-small);
   }
 
 
+  section {
+    padding: 50px 0px;
+    max-width: 1200px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    margin: auto;
+  }
 
+
+  .info-container {
+    background-color: var(--light-charcoal05);
+    margin: 0px 100px;
+    padding: 100px;
+    border-radius: var(--border-radius-large);
+    min-height: 30vh;
+    opacity: 1;
+    animation-name: fadein;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    vertical-align: auto;
+    backdrop-filter: blur(1px);
+  }
 
   #stars {
     width: 1px;
