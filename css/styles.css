@@ -308,10 +308,11 @@ footer li {
 }
 
 .project-header h2 {
-  font-size: 36px;
+  font-size: clamp(20px, 6vw, 40px);
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 20px;
+  
 }
 
 .project-header h2:before,
