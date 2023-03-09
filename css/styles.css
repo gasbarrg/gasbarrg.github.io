@@ -309,6 +309,25 @@ footer li {
   margin-bottom: 20px;
 }
 
+.project-header h2:before,
+.project-header h2:after {
+ background-color:var(--light-red05);
+ content: "";
+ display: inline-block;
+ height: 1px;
+ position: relative;
+ vertical-align: middle;
+ width: 50px;
+}
+.project-header h2:before {
+ right: 0.5em;
+ margin-left: -50%;
+}
+.project-header h2:after {
+ left: 0.5em;
+ margin-right: -50%;
+}
+
 .project-header p {
   font-size: 20px;
   line-height: 1.5;
@@ -631,48 +650,6 @@ footer li {
 /*-------------------------------------------*/
 
 
-
-/*--------------LOADER STYLES----------------*/
-.loader-container {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 1;
-  width: 120px;
-  height: 120px;
-  margin: -76px 0 0 -76px;
-  display: flex;
-  height: 100%;
-}
-
-.loader-icon {
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
-  height: 100px;
-  width: 100px;
-}
-
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-/*-------------------------------------------*/
-
 .links-container {
   display: grid;
   margin: auto;
@@ -692,8 +669,6 @@ footer li {
   text-decoration: none;
   color: var(--light-red);
 }
-
-
 
 
 
