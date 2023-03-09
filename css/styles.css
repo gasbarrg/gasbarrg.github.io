@@ -55,6 +55,8 @@ section {
   transform: translate(-50%, -50%);
   padding-bottom: 50px;
 }
+
+
 /*----------------------------------------------*/
 
 
@@ -226,6 +228,7 @@ footer li {
   vertical-align: auto;
   backdrop-filter: blur(1px);
 }
+
 
 /* FADE IN ANIMATION */
 @keyframes fadein {
