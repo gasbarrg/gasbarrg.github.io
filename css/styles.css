@@ -33,6 +33,7 @@ body {
   --charcoal05: #1D1D1D9d;
   --light-charcoal05: #3333339D;
   --light-charcoal08: #333333d3;
+  --light-charcoal09: #333333eb;
   --light-charcoal: #333333;
   --transparent: #33333300;
   --slate: #BFBFBF;
@@ -444,7 +445,7 @@ footer li {
   text-align: right;
   position: relative;
   grid-area: 1 / 4 / -1 / 11;
-  background-color: var(--light-charcoal);
+  background-color: var(--light-charcoal09);
   z-index: 2;
   border-radius: var(--border-radius-large);
   backdrop-filter: blur(1px);
@@ -498,7 +499,7 @@ footer li {
   margin: auto;
   position: relative;
   grid-area: 1 / 1 / -1 / 8;
-  background-color: var(--light-charcoal);
+  background-color: var(--light-charcoal09);
   z-index: 2;
   z-index: 3;
   backdrop-filter: blur(1px);
