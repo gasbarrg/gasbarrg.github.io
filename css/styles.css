@@ -435,6 +435,7 @@ footer li {
   padding-left: 25px; 
   padding-top: 5px;
   padding-right: 25px; 
+  color: var(--slate);
 }
 
 /* Left */
@@ -443,7 +444,7 @@ footer li {
   text-align: right;
   position: relative;
   grid-area: 1 / 4 / -1 / 11;
-  background-color: var(--light-charcoal08);
+  background-color: var(--light-charcoal);
   z-index: 2;
   border-radius: var(--border-radius-large);
   backdrop-filter: blur(1px);
@@ -486,13 +487,18 @@ footer li {
   left: -3px;
 }
 
+.project-image-l:hover{
+  z-index: 3;
+}
+
+
 
 /* Right */ 
 .project-content-r {
   margin: auto;
   position: relative;
   grid-area: 1 / 1 / -1 / 8;
-  background-color: var(--light-charcoal08);
+  background-color: var(--light-charcoal);
   z-index: 2;
   z-index: 3;
   backdrop-filter: blur(1px);
@@ -536,6 +542,10 @@ footer li {
 .project-image-r:hover:after{
   top: -3px;
   left: -3px;
+}
+
+.project-image-r:hover{
+  z-index: 3;
 }
 
 .tag-container{
