@@ -468,6 +468,26 @@ footer li {
   vertical-align: middle;
 }
 
+.project-image-r::before{
+  background: var(--light-red02);
+  z-index: 3;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--border-radius-small);
+  transition: var(--transition-long);
+}
+
+.project-image-l:hover::before{
+  background-color: var(--transparent);
+}
+
+.project-image-r:hover::before{
+  background-color: var(--transparent);
+}
+
 .project-image-l::after{
   border: 3px solid var(--light-red);
   top: 10px;
@@ -481,6 +501,19 @@ footer li {
   height: 100%;
   border-radius: var(--border-radius-small);
   transition: var(--transition-short);
+}
+
+.project-image-l::before{
+  background: var(--light-red05);
+  opacity: .8;
+  z-index: 3;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--border-radius-small);
+  transition: var(--transition-long);
 }
 
 .project-image-l:hover:after{
