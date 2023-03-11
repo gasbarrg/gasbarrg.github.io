@@ -396,7 +396,9 @@ footer li {
 
 .project-container h3 {
   padding: 10px;
+  margin-left: -10px;
   padding-top: 30px;
+  text-align: left;
 }
 
 .project-container img {
@@ -795,6 +797,7 @@ footer li {
   color: var(--light-red);
   text-align: center;
   vertical-align: middle;
+  font-weight: bold;
   padding: 5px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
