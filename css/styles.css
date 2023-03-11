@@ -62,6 +62,13 @@ section {
   padding-bottom: 50px;
 }
 
+::-webkit-scrollbar-track {
+  background: var(--light-charcoal);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--light-red);
+}
 
 /*----------------------------------------------*/
 
@@ -449,6 +456,7 @@ footer li {
   z-index: 2;
   border-radius: var(--border-radius-large);
   backdrop-filter: blur(1px);
+  box-shadow: var(--box-shadow);
 }
 
 .project-image-l {
@@ -537,6 +545,7 @@ footer li {
   z-index: 3;
   backdrop-filter: blur(1px);
   border-radius: var(--border-radius-large);
+  box-shadow: var(--box-shadow);
 }
 
 .project-image-r img {
@@ -556,6 +565,7 @@ footer li {
   border-radius: var(--border-radius-small);
   transition: var(--transition-short);
   margin-right:15px;
+  
 }
 
 .project-image-r::after{
