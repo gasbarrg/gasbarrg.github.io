@@ -15,6 +15,8 @@ body {
   overflow: hidden;
 }
 
+
+
 body {
   margin: 0;
   width: 100%;
@@ -279,7 +281,6 @@ footer li {
 
 .about-container a {
   color: var(--light-red);
-  text-decoration: none;
   font-weight: bold;
 }
 
@@ -373,7 +374,6 @@ footer li {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
-  align-items: center;
   height: auto;
   width: 300px;
   overflow: hidden;
@@ -382,6 +382,7 @@ footer li {
   transition: var(--transition-long);
   backdrop-filter: blur(1px);
 }
+
 
 .project-container:hover {
   color: var(--light-red);
@@ -428,16 +429,15 @@ footer li {
 }
 
 .tag-container-light{
-  margin-top: 2vmin;
-  margin-bottom: 10px;
+  margin-top: auto;
+  vertical-align: bottom;
+  bottom: 0px;
   margin-left: 5px;
   margin-right: 5px;
   display: flex;
   flex-wrap: wrap;
   place-content: center;
   gap: 1vmin;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
 }
 .tag-light {
   color: var(--light-red);
@@ -470,6 +470,10 @@ footer li {
   grid-template-columns: repeat(10, 1fr);
   -webkit-box-align: center;
   align-items: center;
+}
+.featured-projects a{
+    color: var(--light-red);
+  font-weight: bold;
 }
 
 .featured-projects h3 {
@@ -812,7 +816,7 @@ footer li {
 .lang-container ul {
   counter-reset: index;
   padding: 0;
-  max-width: 600px;
+  max-width: 300px;
 }
 
 .lang-container li {
@@ -847,6 +851,8 @@ footer li {
   justify-content: center;
   width: 100%;
 }
+
+
 /*----------------------------------------*/
 
 
