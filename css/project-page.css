@@ -52,13 +52,10 @@ html{
   }
   
   h1 {
-    padding: 100px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     position: relative;
-    font-size: clamp(30px, 8vw, 40px);
-    color: var(--slate);
-    text-align: left;
+    font-size:75px;
+    color: var(--light-red);
+    vertical-align: middle;
   } 
   
   header .container {
@@ -129,6 +126,13 @@ html{
     margin: auto;
   }
 
+  .section404{
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    margin: auto;
+  }
+
 
   .info-container {
     background-color: var(--light-charcoal05);
@@ -142,6 +146,16 @@ html{
     animation-fill-mode: both;
     vertical-align: auto;
     backdrop-filter: blur(1px);
+  }
+
+  .container404{
+    text-align: center;
+    vertical-align: middle;
+    height: 100vh;
+  }
+
+  .container404 p{
+    font-size: 18px;
   }
 
   #stars {
