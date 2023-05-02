@@ -478,6 +478,11 @@ footer li {
   color: var(--slate);
 }
 
+.gh-button{
+  margin: 5px;
+  display: flex;
+  place-content: center;
+}
 /*-------------------------------------------*/
 
 
